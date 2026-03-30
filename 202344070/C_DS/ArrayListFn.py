@@ -1,3 +1,4 @@
+import ArrayList
 #전역변수 선언(전역 변수 = 어떤 함수이든 그 값이 어디서든 통용됨)
 
 capacity=100
