@@ -1,9 +1,9 @@
 class CircularQueue:
     def __init__(self,capacity):
-        self.capacity = 8
+        self.capacity = capacity
         self.array = [None]*self.capacity
         self.front = 0
-        self.rear = 8
+        self.rear = capacity
 
     def isEmpty(self):
         return self.front == self.rear
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     q.dequeue()
     q.dequeue()
     print('삭제q: ',q )
-
+    
     q.enqueue("G")
     q.enqueue("H")
     q.enqueue("I")
