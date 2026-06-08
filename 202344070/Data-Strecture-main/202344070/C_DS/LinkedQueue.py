@@ -35,7 +35,7 @@ class LinkedQueue:
         if not self.isEmpty():
             return self.tail.link.data
         
-    def size(self):
+    def size(self): # 시간 복잡도는 빅오n
         if self.isEmpty():
             return 0 
         else:
@@ -50,7 +50,7 @@ class LinkedQueue:
 
 
 
-    def __str__(self):
+    def __str__(self): # 사이즈는 빅오n
         arr =[]
         if not self.isEmpty():
             node = self.tail.link
@@ -70,10 +70,10 @@ if __name__ == "__main__":
     q.enqueue('E')
     q.enqueue('F')
 
-    print(" 원형큐 삽입: ",q)
+    print("원형큐 삽입: ",q)
 
     print('삭제: ',q.dequeue())
     print('삭제: ',q.dequeue())
     print('삭제: ',q.dequeue())
     
-    print(" 원형큐 삭제후: ",q)
+    print("원형큐 삭제후: ",q)
